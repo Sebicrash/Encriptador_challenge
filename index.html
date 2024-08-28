@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - Challenge AluraOne</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="container">
+        <img class="header_seccion_img" src="assets/logo.svg" alt="Logo alura latam">
+    </header>
+    <main class="Presentacion">
+        <section>
+            <textarea id="textarea" class="Encriptacion_main_input" rows="10" cols="30" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="advertencia">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="Encriptacion_botones">
+                <button class="Encriptacion_botones_encriptar" onclick="encryptText()">Encriptar</button>
+                <button class="Encriptacion_botones_desencriptar" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="mensaje" class="mensaje" rows="10" cols="21" ></textarea>
+            <div>
+                <button onclick="copyToClipboard()" class="TextoEncriptado_boton">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="Footer">Desarrollado por Sebastián Rodas</p>
+    </footer>
+<script src="app.js" defer></script>
+</body>
+</html>
